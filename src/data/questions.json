@@ -1,0 +1,188 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "How has this year gone?"
+    },
+    {
+      "id": 2,
+      "question": "What went well?"
+    },
+    {
+      "id": 3,
+      "question": "What went badly?"
+    },
+    {
+      "id": 4,
+      "question": "Why?"
+    },
+    {
+      "id": 5,
+      "question": "What lessons did I learn?"
+    },
+    {
+      "id": 6,
+      "question": "What habit or system accounted for most of my success?"
+    },
+    {
+      "id": 7,
+      "question": "What are the most valuable ways I spend my time?"
+    },
+    {
+      "id": 8,
+      "question": "How can I find more time for this?"
+    },
+    {
+      "id": 9,
+      "question": "What brought me the most happiness?"
+    },
+    {
+      "id": 10,
+      "question": "How can I help these activities to happen more often?"
+    },
+    {
+      "id": 11,
+      "question": "Who are the people that had the greatest impact on me?"
+    },
+    {
+      "id": 12,
+      "question": "How can I see and collaborate with them more?"
+    },
+    {
+      "id": 13,
+      "question": "What did I expect to complete, but didn't?"
+    },
+    {
+      "id": 14,
+      "question": "Is this still an important goal of mine? If so, how can I make future follow-through more likely?"
+    },
+    {
+      "id": 15,
+      "question": "What are the least valuable ways I am spending my time?"
+    },
+    {
+      "id": 16,
+      "question": "How can I prevent myself from continuing to spend time in this way?"
+    },
+    {
+      "id": 17,
+      "question": "How have my goals or priorities shifted over the last few months?"
+    },
+    {
+      "id": 18,
+      "question": "Is there anything I am still doing that is no longer in alignment? Why?"
+    },
+    {
+      "id": 19,
+      "question": "Best Surprise:"
+    },
+    {
+      "id": 20,
+      "question": "Best Meal:"
+    },
+    {
+      "id": 21,
+      "question": "Coolest New Experience:"
+    },
+    {
+      "id": 22,
+      "question": "Favourite Weekend:"
+    },
+    {
+      "id": 23,
+      "question": "Favourite First Meeting:"
+    },
+    {
+      "id": 24,
+      "question": "Favourite New City:"
+    },
+    {
+      "id": 25,
+      "question": "Favourite New Emotion:"
+    },
+    {
+      "id": 26,
+      "question": "Favourite New Walk:"
+    },
+    {
+      "id": 27,
+      "question": "Favourite New Friend:"
+    },
+    {
+      "id": 28,
+      "question": "Favourite Day:"
+    },
+    {
+      "id": 29,
+      "question": "Most Intense Week:"
+    },
+    {
+      "id": 30,
+      "question": "Favourite Artist:"
+    },
+    {
+      "id": 31,
+      "question": "Favourite Song:"
+    },
+    {
+      "id": 32,
+      "question": "Favourite Quote:"
+    },
+    {
+      "id": 33,
+      "question": "What would I do this year if I wanted to make 85 year old me miserable?"
+    },
+    {
+      "id": 34,
+      "question": "What would 85 year old me wish I did more of?"
+    },
+    {
+      "id": 35,
+      "question": "What would 85 year old me wish I did less of?"
+    },
+    {
+      "id": 36,
+      "question": "What are the things I do to make my day go great?"
+    },
+    {
+      "id": 37,
+      "question": "What things make my days go terribly?"
+    },
+    {
+      "id": 38,
+      "question": "What do I think is productive that isn't?"
+    },
+    {
+      "id": 39,
+      "question": "What is productive that I don't realize?"
+    },
+    {
+      "id": 40,
+      "question": "What do I want to do less of with my time?"
+    },
+    {
+      "id": 41,
+      "question": "What do I want to do more of with my time?"
+    },
+    {
+      "id": 42,
+      "question": "What does an ideal normal day look like? Write it out."
+    },
+    {
+      "id": 43,
+      "question": "What conversations do I need to have?"
+    },
+    {
+      "id": 44,
+      "question": "What would have had to have happened by the end of next year for me to look back on the year and consider it a success?"
+    },
+    {
+      "id": 45,
+      "question": "Who do I need to become for next year's chapter of my life story to turn out the way I would write it?"
+    },
+    {
+      "id": 46,
+      "question": "Knowing what I know now, what advice would I give to myself 12 months ago? (pssst - you probably still need to hear this now)"
+    }
+  ]
+}
