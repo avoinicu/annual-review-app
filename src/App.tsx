@@ -1,11 +1,9 @@
 import { useAtomValue } from 'jotai';
 
 import { reviewYearAtom } from '~/atoms/reviewYear.atom';
-import { ActionButtons, Categories, Field, Question, Sidebar } from '~/components';
+import { ActionButtons, Categories, Field, Question, Sidebar, ToolButtons } from '~/components';
 import { useReadUrl } from '~/lib/useReadUrl';
 import { useTheme } from '~/lib/useTheme';
-
-import { ToolButtons } from './components/ToolButtons/ToolButtons';
 
 function App() {
   const reviewYear = useAtomValue(reviewYearAtom);

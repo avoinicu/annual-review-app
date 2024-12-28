@@ -20,13 +20,16 @@ const About = () => {
         open={open}
         onOpenChange={setOpen}
       >
-        <DialogContent aria-describedby={undefined}>
+        <DialogContent
+          aria-describedby={undefined}
+        >
           <DialogHeader>
             <DialogTitle>What's this about?</DialogTitle>
             <div id="about-content">
               <p className="mt-4 mb-2 dark:text-slate-400 text-slate-600">
-                I'm <strong className="dark:text-slate-200 text-slate-800">not storing any data</strong> outside of your browser. Please don't take it personally, but
-                I'm not that curious about your life. Not unless we become friends, then I'll be all ears.
+                I'm <strong className="dark:text-slate-200 text-slate-800">not storing any data</strong> outside of your
+                browser. Please don't take it personally, but I'm not that curious about your life. Not unless we become
+                friends, then I'll be all ears.
               </p>
               <p className="mb-2 dark:text-slate-400 text-slate-600">
                 I created this app because of boredom and existential dread during the holidays of 2024. I was listening
@@ -35,13 +38,15 @@ const About = () => {
                   className="underline dark:text-slate-200 text-slate-800"
                   href="https://chriswillx.com/review/"
                   target="_blank"
-                  rel="noreferer noopener"
+                  rel="noreferrer noopener"
                 >
                   annual review template
                 </a>
                 .
               </p>
-              <p className="mb-2 dark:text-slate-400 text-slate-600">I downloaded it and I thought it would be fun to create a web app for it.</p>
+              <p className="mb-2 dark:text-slate-400 text-slate-600">
+                I downloaded it and I thought it would be fun to create a web app for it.
+              </p>
             </div>
           </DialogHeader>
         </DialogContent>

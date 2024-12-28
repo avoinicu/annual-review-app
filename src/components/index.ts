@@ -5,3 +5,5 @@ export { Sidebar } from './Sidebar/Sidebar';
 export { ActionButtons } from './ActionButtons/ActionButtons';
 export { Field } from './Field/Field';
 export { Categories } from './Categories/Categories';
+export { AddToCalendar } from './AddToCalendar/AddToCalendar';
+export { ToolButtons } from './ToolButtons/ToolButtons';
