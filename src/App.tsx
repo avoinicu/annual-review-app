@@ -13,10 +13,7 @@ function App() {
 
   return (
     <div className="container flex flex-col h-full min-h-full gap-4 px-2 py-4 mx-auto md:px-4">
-      <div
-        tabIndex={-1}
-        className="flex items-center gap-4"
-      >
+      <div className="flex items-center gap-4">
         <Sidebar />
         <Question className="mr-auto" />
         <ActionButtons />

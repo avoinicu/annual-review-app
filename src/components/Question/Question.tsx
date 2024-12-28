@@ -12,7 +12,6 @@ const Question = ({ className }: { className?: string }) => {
 
   return (
     <Label
-      tabIndex={-1}
       className={cn('md:text-3xl font-semibold font-lora', className)}
       htmlFor={currentQuestion.toString()}
     >

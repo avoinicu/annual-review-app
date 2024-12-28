@@ -7,10 +7,7 @@ import { cn } from '~/lib/utils';
 
 const ToolButtons = () => {
   return (
-    <div
-      className="flex gap-4 ml-auto"
-      tabIndex={-1}
-    >
+    <div className="flex gap-4 ml-auto">
       <Tooltip>
         <TooltipTrigger asChild>
           <a

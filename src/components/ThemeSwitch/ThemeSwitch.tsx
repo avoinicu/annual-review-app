@@ -19,7 +19,6 @@ const ThemeSwitch = () => {
         <TooltipTrigger asChild>
           <DropdownMenuTrigger asChild>
             <Button
-              tabIndex={-1}
               variant="outline"
               size="icon"
             >
