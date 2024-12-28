@@ -14,17 +14,19 @@ function App() {
   useReadUrl();
 
   return (
-    <div className="container flex flex-col h-full min-h-full gap-4 px-4 py-4 mx-auto">
+    <div className="container flex flex-col h-full min-h-full gap-4 px-2 py-4 mx-auto md:px-4">
       <div
         tabIndex={-1}
-        className="flex items-center gap-4 px-14"
+        className="flex items-center gap-4"
       >
+        <Sidebar />
         <Question className="mr-auto" />
         <ActionButtons />
+        <Sidebar />
       </div>
       <div className="container flex items-start justify-start h-full gap-4 ">
         <Sidebar>
-          <h1 className="absolute inline-flex text-4xl font-bold origin-right transform -rotate-90 -translate-x-full -translate-y-1/2 text-slate-300 dark:text-slate-800 left-1/2 whitespace-nowrap">
+          <h1 className="absolute inline-flex text-4xl font-bold origin-right transform -rotate-90 -translate-x-full -translate-y-1/2 select-none text-slate-300 dark:text-slate-600 left-1/2 whitespace-nowrap">
             Annual Review: {reviewYear}
           </h1>
         </Sidebar>
@@ -38,8 +40,10 @@ function App() {
         </Sidebar>
       </div>
 
-      <footer className="flex justify-end px-14">
+      <footer className="flex gap-4">
+        <Sidebar />
         <ToolButtons />
+        <Sidebar />
       </footer>
     </div>
   );

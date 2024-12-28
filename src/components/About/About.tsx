@@ -20,7 +20,7 @@ const About = () => {
         open={open}
         onOpenChange={setOpen}
       >
-        <DialogContent aria-describedby="about-content">
+        <DialogContent aria-describedby={undefined}>
           <DialogHeader>
             <DialogTitle>What's this about?</DialogTitle>
             <div id="about-content">
