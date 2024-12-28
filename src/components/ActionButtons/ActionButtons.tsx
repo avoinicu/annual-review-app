@@ -2,7 +2,7 @@ import { useAtom } from 'jotai';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 import { currentQuestionAtom } from '~/atoms/currentQuestion.atom';
-import { AddToCalendar } from '~/components';
+import { AddToCalendar, DownloadButton } from '~/components';
 import { Button } from '~/components/ui/button';
 import { Tooltip, TooltipContent, TooltipTrigger } from '~/components/ui/tooltip';
 import { getQuestionsMap } from '~/lib/getQuestionsMap';
@@ -61,6 +61,8 @@ const ActionButtons = () => {
       )}
 
       <AddToCalendar />
+
+      <DownloadButton />
     </div>
   );
 };

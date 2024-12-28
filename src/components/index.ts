@@ -7,3 +7,5 @@ export { Field } from './Field/Field';
 export { Categories } from './Categories/Categories';
 export { AddToCalendar } from './AddToCalendar/AddToCalendar';
 export { ToolButtons } from './ToolButtons/ToolButtons';
+export { PdfDocument } from './PdfDocument/PdfDocument';
+export { DownloadButton } from './DownloadButton/DownloadButton';

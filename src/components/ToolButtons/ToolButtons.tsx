@@ -24,18 +24,10 @@ const ToolButtons = () => {
         </TooltipTrigger>
         <TooltipContent>Made with passion by...</TooltipContent>
       </Tooltip>
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <About />
-        </TooltipTrigger>
-        <TooltipContent>About this app</TooltipContent>
-      </Tooltip>
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <ThemeSwitch />
-        </TooltipTrigger>
-        <TooltipContent>Toggle theme</TooltipContent>
-      </Tooltip>
+
+      <About />
+
+      <ThemeSwitch />
     </div>
   );
 };
