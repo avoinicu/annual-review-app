@@ -10,12 +10,13 @@ import {
   DropdownMenuTrigger,
 } from '~/components/ui/dropdown-menu';
 
-export const ThemeSwitch = () => {
-  const setTheme= useSetAtom(themeAtom);
+const ThemeSwitch = () => {
+  const setTheme = useSetAtom(themeAtom);
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
+          tabIndex={-1}
           variant="outline"
           size="icon"
         >
@@ -32,3 +33,6 @@ export const ThemeSwitch = () => {
     </DropdownMenu>
   );
 };
+
+ThemeSwitch.displayName = 'ThemeSwitch';
+export { ThemeSwitch };

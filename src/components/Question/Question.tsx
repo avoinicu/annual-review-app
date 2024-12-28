@@ -1,36 +1,25 @@
-import { useAtom } from 'jotai';
+import { useAtomValue } from 'jotai';
 
-import { currentAnswerAtom } from '~/atoms/currentAnswer.atom';
+import { currentQuestionAtom } from '~/atoms/currentQuestion.atom';
 import { Label } from '~/components/ui/label';
-import { Textarea } from '~/components/ui/textarea';
-import { useSaveData } from '~/lib/saveData';
-import type { TQuestion } from '~/types';
+import { getQuestionsMap } from '~/lib/getQuestionsMap';
+import { cn } from '~/lib/utils';
 
-export const Question = ({ id, question }: TQuestion) => {
-  const [currentAnswer, setCurrentAnswer] = useAtom(currentAnswerAtom);
-  const saveData = useSaveData();
-
-  const questionId = id.toString();
-
-  const handleOnBlur = () => {
-    console.log('Saving data...');
-    saveData();
-  };
+const Question = ({ className }: { className?: string }) => {
+  const currentQuestion = useAtomValue(currentQuestionAtom);
+  const questions = getQuestionsMap();
+  const question = questions.get(currentQuestion);
 
   return (
-    <div className="flex flex-col gap-4">
-      <Label htmlFor={questionId}>{question}</Label>
-      <Textarea
-        autoFocus
-        value={currentAnswer}
-        onChange={(e) => {
-          setCurrentAnswer(e.target.value);
-        }}
-        onBlur={handleOnBlur}
-        id={questionId}
-        name={questionId}
-        rows={5}
-      />
-    </div>
+    <Label
+      tabIndex={-1}
+      className={cn('md:text-3xl font-semibold font-lora', className)}
+      htmlFor={currentQuestion.toString()}
+    >
+      {question?.question}
+    </Label>
   );
 };
+
+Question.displayName = 'Question';
+export { Question };
