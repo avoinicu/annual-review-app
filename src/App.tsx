@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { useAtomValue } from 'jotai';
 
 import { reviewYearAtom } from '~/atoms/reviewYear.atom';
@@ -40,6 +41,7 @@ function App() {
         <ToolButtons />
         <Sidebar />
       </footer>
+      <Analytics />
     </div>
   );
 }

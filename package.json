@@ -17,6 +17,7 @@
     "@radix-ui/react-switch": "^1.1.2",
     "@radix-ui/react-tooltip": "^1.1.6",
     "@react-pdf/renderer": "^4.1.6",
+    "@vercel/analytics": "^1.4.1",
     "calendar-link": "^2.8.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
