@@ -4,6 +4,6 @@ import { answersAtom } from '~/atoms/answers.atom';
 
 export const useHasAnswers = () => {
   const answers = useAtomValue(answersAtom);
-  const splitAnswers = answers.split(':');
-  return splitAnswers.filter((answer) => answer !== '').length > 1;
+  const reviewYear = Object.keys(answers)[0];
+  return answers[reviewYear].filter((answer) => answer !== '').length > 0;
 };

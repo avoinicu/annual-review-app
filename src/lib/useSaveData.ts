@@ -2,12 +2,14 @@ import { useAtomValue } from 'jotai';
 import pako from 'pako';
 
 import { answersAtom } from '~/atoms/answers.atom';
+import { reviewYearAtom } from '~/atoms/reviewYear.atom';
 
 export const useSaveData = () => {
   const answers = useAtomValue(answersAtom);
+  const reviewYear = useAtomValue(reviewYearAtom);
 
   const saveData = () => {
-    const data = JSON.stringify(answers);
+    const data = `${reviewYear}:${answers[reviewYear].join(':')}`;
     const compressedData = pako.deflate(data);
     const base64Data = btoa(String.fromCharCode(...compressedData));
 

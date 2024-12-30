@@ -1,4 +1,5 @@
 import { useAtom } from 'jotai';
+import isEqual from 'lodash.isequal';
 
 import { answersAtom } from '~/atoms/answers.atom';
 import { unpackedAtom } from '~/atoms/unpacked.atom';
@@ -23,6 +24,8 @@ export const useReadUrl = () => {
   }
 
   const unpackedData = unpackData(dataParam);
+  const unpackedYear = Object.keys(unpackedData)[0];
+
   setUnpacked(true);
 
   if (!hasAnswers) {
@@ -30,7 +33,7 @@ export const useReadUrl = () => {
     return STATUS_CODES.OK;
   }
 
-  if (answers === unpackedData) {
+  if (isEqual(answers[unpackedYear], unpackedData[unpackedYear])) {
     return STATUS_CODES.OK;
   }
 

@@ -3,6 +3,7 @@ import { useAtomValue } from 'jotai';
 import React from 'react';
 
 import { answersAtom } from '~/atoms/answers.atom';
+import { reviewYearAtom } from '~/atoms/reviewYear.atom';
 import { groups } from '~/data/questionGroups.json';
 import OpenSansBold from '~/fonts/OpenSans-Bold.ttf';
 import OpenSansRegular from '~/fonts/OpenSans-Regular.ttf';
@@ -47,9 +48,9 @@ const styles = StyleSheet.create({
 });
 
 const PdfDocument = () => {
-  const answers = useAtomValue(answersAtom).split(':');
+  const reviewYear = useAtomValue(reviewYearAtom);
+  const answers = useAtomValue(answersAtom)[reviewYear];
   const hasAnswers = useHasAnswers();
-  const reviewYear = answers[0];
   const questions = getQuestionsMap();
 
   if (!hasAnswers) {
@@ -71,7 +72,7 @@ const PdfDocument = () => {
                 <Text style={styles.groupTitle}>{group.name}</Text>
                 {group.questions.map((questionId) => {
                   const question = questions.get(questionId);
-                  const answer = answers[questionId];
+                  const answer = answers[questionId-1];
                   if (answer?.length) {
                     return (
                       <React.Fragment key={questionId}>

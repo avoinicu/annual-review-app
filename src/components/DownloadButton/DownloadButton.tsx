@@ -17,8 +17,6 @@ const DownloadButton = () => {
     return null;
   }
 
-  console.log('instance', instance);
-
   if (instance.loading) {
     return (
       <div className={cn(buttonVariants({ variant: 'outline', size: 'icon' }))}>

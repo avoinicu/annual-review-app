@@ -6,6 +6,8 @@ export const unpackData = (data: string) => {
     .map((c) => c.charCodeAt(0));
   const decompressedData = pako.inflate(new Uint8Array(compressedData));
   const decoder = new TextDecoder();
-  const decompressedString = decoder.decode(decompressedData);
-  return JSON.parse(decompressedString);
+  const decompressedString = decoder.decode(decompressedData).split(':');
+  return {
+    [decompressedString[0]]: decompressedString.slice(1),
+  };
 };
