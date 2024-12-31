@@ -1,3 +1,4 @@
+import { SiGithub } from '@icons-pack/react-simple-icons';
 import { Heart } from 'lucide-react';
 
 import { About, ThemeSwitch } from '~/components';
@@ -20,6 +21,20 @@ const ToolButtons = () => {
           </a>
         </TooltipTrigger>
         <TooltipContent>Made with passion by...</TooltipContent>
+      </Tooltip>
+
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <a
+            className={cn(buttonVariants({ variant: 'outline', size: 'icon' }))}
+            href="https://github.com/avoinicu/annual-review-app"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <SiGithub className="h-[1.2rem] w-[1.2rem]" />
+          </a>
+        </TooltipTrigger>
+        <TooltipContent>View the code</TooltipContent>
       </Tooltip>
 
       <About />

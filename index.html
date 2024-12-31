@@ -33,14 +33,5 @@
       type="module"
       src="/src/main.tsx"
     ></script>
-    <script>
-      function updateFavicon() {
-        const favicon = document.getElementById('favicon');
-        const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        favicon.href = darkMode ? 'icon-dark.svg' : 'icon-light.svg';
-      }
-      updateFavicon();
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
-    </script>
   </body>
 </html>
