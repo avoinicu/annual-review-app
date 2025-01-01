@@ -22,8 +22,8 @@ function App() {
       </div>
       <div className="container flex items-start justify-start h-full gap-4 ">
         <Sidebar>
-          <h1 className="absolute inline-flex text-4xl font-bold origin-right transform -rotate-90 -translate-x-full -translate-y-1/2 select-none text-slate-300 dark:text-slate-600 left-1/2 whitespace-nowrap">
-            Annual Review: {reviewYear}
+          <h1 className="absolute inline-flex text-4xl font-bold origin-right transform -rotate-90 -translate-x-full -translate-y-1/2 select-none text-slate-300 dark:text-slate-600 left-1/2 whitespace-nowrap font-doto">
+            Annual Review {reviewYear}
           </h1>
         </Sidebar>
 
