@@ -9,3 +9,4 @@ export { AddToCalendar } from './AddToCalendar/AddToCalendar';
 export { ToolButtons } from './ToolButtons/ToolButtons';
 export { PdfDocument } from './PdfDocument/PdfDocument';
 export { DownloadButton } from './DownloadButton/DownloadButton';
+export { ChangeYear } from './ChangeYear/ChangeYear';

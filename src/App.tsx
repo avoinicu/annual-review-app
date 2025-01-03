@@ -1,16 +1,10 @@
 import { Analytics } from '@vercel/analytics/react';
-import { useAtomValue } from 'jotai';
 
-import { reviewYearAtom } from '~/atoms/reviewYear.atom';
-import { ActionButtons, Categories, Field, Question, Sidebar, ToolButtons } from '~/components';
-import { useReadUrl } from '~/lib/useReadUrl';
+import { ActionButtons, Categories, ChangeYear, Field, Question, Sidebar, ToolButtons } from '~/components';
 import { useTheme } from '~/lib/useTheme';
 
 function App() {
-  const reviewYear = useAtomValue(reviewYearAtom);
-
   useTheme();
-  useReadUrl();
 
   return (
     <div className="container flex flex-col h-full min-h-full gap-4 px-2 py-4 mx-auto md:px-4">
@@ -22,9 +16,10 @@ function App() {
       </div>
       <div className="container flex items-start justify-start h-full gap-4 ">
         <Sidebar>
-          <h1 className="absolute inline-flex text-4xl font-bold origin-right transform -rotate-90 -translate-x-full -translate-y-1/2 select-none text-slate-300 dark:text-slate-600 left-1/2 whitespace-nowrap font-doto">
-            Annual Review {reviewYear}
-          </h1>
+          <div className="absolute inline-flex gap-4 origin-right transform -rotate-90 -translate-x-full -translate-y-1/2 select-none font-doto left-1/2 text-slate-300 dark:text-slate-600">
+            <h1 className="text-4xl whitespace-nowrap">Annual Review</h1>
+            <ChangeYear />
+          </div>
         </Sidebar>
 
         <div className="flex flex-col flex-grow w-full h-full min-h-full gap-2">

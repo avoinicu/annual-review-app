@@ -13,7 +13,7 @@ const Question = ({ className }: { className?: string }) => {
   return (
     <Label
       className={cn('md:text-3xl font-semibold font-lora', className)}
-      htmlFor={currentQuestion.toString()}
+      htmlFor={(currentQuestion - 1).toString()}
     >
       {question?.question}
     </Label>

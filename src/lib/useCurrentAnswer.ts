@@ -12,13 +12,16 @@ export const useCurrentAnswer = () => {
   const updateAnswer = (update: string) => {
     setAnswers((prev) => {
       const newAnswers = { ...prev };
+      if (!newAnswers[reviewYear]) {
+        newAnswers[reviewYear] = [];
+      }
       newAnswers[reviewYear][currentQuestion] = update;
       return newAnswers;
     });
   };
 
   return {
-    answer: answers[reviewYear][currentQuestion] ?? '',
+    answer: answers[reviewYear]?.[currentQuestion] ?? '',
     setAnswer: updateAnswer,
   };
 };
