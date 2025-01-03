@@ -8,7 +8,7 @@ const Categories = () => {
   const questionId = useAtomValue(currentQuestionAtom);
 
   return (
-    <ul className="flex gap-4 origin-top-left transform rotate-90 translate-x-full select-none whitespace-nowrap text-slate-300 dark:text-slate-600">
+    <ul className="flex gap-4 text-xl origin-top-left transform rotate-90 translate-x-full select-none font-doto whitespace-nowrap text-slate-300 dark:text-slate-600">
       {groups.map((group: { name: string; questions: number[] }) => (
         <li
           key={group.name}

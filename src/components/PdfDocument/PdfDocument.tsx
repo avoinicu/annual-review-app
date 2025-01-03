@@ -8,7 +8,6 @@ import { groups } from '~/data/questionGroups.json';
 import OpenSansBold from '~/fonts/OpenSans-Bold.ttf';
 import OpenSansRegular from '~/fonts/OpenSans-Regular.ttf';
 import { getQuestionsMap } from '~/lib/getQuestionsMap';
-import { useHasAnswers } from '~/lib/useHasAnswers';
 
 Font.register({
   family: 'Open Sans',
@@ -49,13 +48,9 @@ const styles = StyleSheet.create({
 
 const PdfDocument = () => {
   const reviewYear = useAtomValue(reviewYearAtom);
-  const answers = useAtomValue(answersAtom)[reviewYear];
-  const hasAnswers = useHasAnswers();
-  const questions = getQuestionsMap();
+  const answers = useAtomValue(answersAtom)[reviewYear] || [];
 
-  if (!hasAnswers) {
-    return null;
-  }
+  const questions = getQuestionsMap();
 
   return (
     <Document>
@@ -72,7 +67,7 @@ const PdfDocument = () => {
                 <Text style={styles.groupTitle}>{group.name}</Text>
                 {group.questions.map((questionId) => {
                   const question = questions.get(questionId);
-                  const answer = answers[questionId-1];
+                  const answer = answers[questionId - 1];
                   if (answer?.length) {
                     return (
                       <React.Fragment key={questionId}>

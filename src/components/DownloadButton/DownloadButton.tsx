@@ -11,9 +11,9 @@ import { cn } from '~/lib/utils';
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
 
 const DownloadButton = () => {
+  const hasAnswers = useHasAnswers();
   const [instance] = usePDF({ document: <PdfDocument /> });
   const year = useAtomValue(reviewYearAtom);
-  const hasAnswers = useHasAnswers();
 
   if (!hasAnswers) {
     return null;

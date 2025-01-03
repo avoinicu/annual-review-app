@@ -2,7 +2,7 @@ import { useAtomValue } from 'jotai';
 
 import { currentQuestionAtom } from '~/atoms/currentQuestion.atom';
 import { Textarea } from '~/components/ui/textarea';
-import { useCurrentAnswer } from '~/lib/useCurrentAnser';
+import { useCurrentAnswer } from '~/lib/useCurrentAnswer';
 import { useSaveData } from '~/lib/useSaveData';
 
 const Field = () => {
